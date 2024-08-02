@@ -1,0 +1,41 @@
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-7px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(7px);
+  }
+}
+
+.shake {
+  animation: shake 0.3s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.blink {
+  animation: blink 0.3s;
+  animation-iteration-count: 1;
+  animation-delay: 0.2s;
+}
